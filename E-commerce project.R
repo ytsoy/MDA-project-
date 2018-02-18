@@ -27,5 +27,10 @@ View(data5) #data looks like a text, I tried to use different "sep" and nothing 
 #3 - Title of data differes what is exactly in it. For example, I found the "Amazon data" but data was not about e-commerce.
 #4 - I am still looking for nice data :)
 
+str(data3) #data is not clear, for example there are characters and numbers in "discription" "country" columns. Invoicedate column does not look good.
+View(data3) #I'm wrong, tha data looks fine at the table.
+table(data3$Country) # I have 446 unspecified countries and 61 European Community. I probably should to drop them. EIRE is Republic of Ireland
+#How to drop the unspecified data?
 
-   
+summary(data3) # I have negative quantity I should check Quantaty column
+table(data3$Quantity)
