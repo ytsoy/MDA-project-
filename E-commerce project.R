@@ -21,5 +21,11 @@ data5 <- read.table(file='data/datapackage.json', sep='\t', header=TRUE)
 head(data5) # null observations and 1 variable - it is a strange data
 View(data5) #data looks like a text, I tried to use different "sep" and nothing happened
 
+#Sources review shows that to find proper data is complicated process. I faced with following problems:
+#1 - Structure of data is different. As I have United Kingdom e-commerce data, I was looking for additional e-data of UK e-store. All my attempts were unsuccessful.
+#2 - Data has different format. I used command "read.table" to convert data in R and sign of separater differs for each data. It is not easy to understand what is "sep" from the first sight.
+#3 - Title of data differes what is exactly in it. For example, I found the "Amazon data" but data was not about e-commerce.
+#4 - I am still looking for nice data :)
+
 
    
